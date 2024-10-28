@@ -8,7 +8,8 @@ namespace Prague_Parking_2._0___OOP_version
 {
     internal class Bus : Vehicle
     {
-        public override string Type => "Bus";
+        public override string Type {
+        get { return "Bus";}
 
         public Bus(string regNumber) : base(regNumber) { }
     }
